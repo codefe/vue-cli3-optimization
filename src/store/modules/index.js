@@ -1,4 +1,10 @@
-import contacts from './contacts'
+import items from './items';
+import header from './header';
+import list from './list';
+import article from './article';
 export default {
-  contacts
-}
+  header,
+  list,
+  article,
+  items
+};

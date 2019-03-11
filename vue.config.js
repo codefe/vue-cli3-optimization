@@ -13,35 +13,35 @@ const externals = {
   'vue-router': 'VueRouter',
   'vuex': 'Vuex',
   'axios': 'axios',
-  'element-ui': 'ELEMENT'
+  //'element-ui': 'ELEMENT'
 }
 // CDN外链，会插入到index.html中
 const cdn = {
   // 开发环境
   dev: {
     css: [
-      'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
+      //'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
     ],
     js: []
   },
   // 生产环境
   build: {
     css: [
-      'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
+      //'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
     ],
     js: [
       'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js',
       'https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
       'https://cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
       'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js',
-      'https://unpkg.com/element-ui/lib/index.js'
+      //'https://unpkg.com/element-ui/lib/index.js'
     ]
   }
 }
 // 是否使用预渲染
 const productionPrerender = true
 // 需要预渲染的路由
-const prerenderRoutes = ['/', '/contacts']
+const prerenderRoutes = ['/', '/items', '/lists', '/article']
 // 是否使用gzip
 const productionGzip = true
 // 需要gzip压缩的文件后缀
